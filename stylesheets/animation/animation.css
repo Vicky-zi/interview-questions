@@ -1,0 +1,83 @@
+/* @keyframes example {
+    0% {
+        transform: translateX(10px);
+    }
+    0% {
+        transform: translateX(40px);
+    }
+    100% {
+        transform: translateX(10px);
+    }
+} */
+
+@keyframes supAnimation{
+    0% { 
+        transform: rotate(0deg) translate(0px);
+        
+    }
+    25%{
+        transform: rotate(8deg) translate(-7px);
+
+    }
+    50% { 
+        transform: rotate(0deg) translate(0px);
+    }
+    100% { 
+        transform: rotate(5deg) translate(6px);
+    }
+}
+
+@keyframes bubble{
+    0% { 
+        /* transform: translateY(0px); */
+        transform: rotate(45deg) translateX(0px);
+        opacity: 0;
+        
+    }
+    50% { 
+        transform: rotate(90deg) translateX(-10px);
+        opacity: .6;
+    }
+    100% { 
+        transform: rotate(50deg) translateX(-15px);
+        opacity: 1; 
+    }
+}
+@keyframes turtle{
+    0% { 
+        transform: rotate(0deg);
+    }
+     25% {
+        transform: rotate(20deg);
+     }
+    50% { 
+        transform: rotate(0deg);
+    }
+    100% { 
+        transform: rotate(10deg);
+    }
+}
+
+
+@keyframes fireworks{
+    0% { 
+        transform: scale(0.8);
+        opacity: 1;
+        
+    }
+    50% { 
+        transform: scale(1.1);
+        opacity: .6;
+    }
+    100% { 
+        transform: scale(1.2);
+        opacity: 0; 
+    }
+}
+
+@keyframes btnAnimation{
+    0%{ background-position: 0 0; }
+    50%{ background-position: 400% 0; }
+    100%{ background-position: 0 0; }
+}
+
