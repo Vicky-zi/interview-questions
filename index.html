@@ -19,9 +19,9 @@
 
 <body>
 
-    
+
     <header class="header-banner d-flex flex-column justify-content-center align-items-center mb-6">
-        
+
         <h1 class="header-bannerText mt-4 fs-1 font-m text-style">There is no one</h1>
         <h2 class="header-bannerText fs-2 font-m text-style">who loves pain</h2>
 
@@ -105,15 +105,15 @@
                             <div>
                                 <label for="store" class="form-label">store<span
                                         class="text-danger ms-1">*</span></label>
-                                <select class="form-select" aria-label="Default select example" id="store" list="store"
-                                    required>
-                                    <datalist id="store">
-                                        <option selected disabled value="">placeholder text</option>
-                                        <option value="store1">store1</option>
-                                        <option value="store2">store2</option>
-                                        <option value="store3">store3</option>
-                                    </datalist>
-                                </select>
+                                <input class="form-select" id="store" list="datalist" required></input>
+
+                                <datalist id="datalist">
+                                    <option  disabled value="">placeholder text</option>
+                                    <option value="store1">store1</option>
+                                    <option value="store2">store2</option>
+                                    <option value="store3">store3</option>
+                                </datalist>
+
                                 <div class="valid-feedback">
                                     required
                                 </div>
@@ -175,27 +175,28 @@
                             </div>
 
                         </div>
-                        <button class="btn btn-primary font-m rounded-pill px-5 shadow-dark btn-submit mx-auto d-flex justify-content-around mb-1"
+                        <button
+                            class="btn btn-primary font-m rounded-pill px-5 shadow-dark btn-submit mx-auto d-flex justify-content-around mb-1"
                             type="submit">
                             <p class="btnText">submit</p>
                         </button>
                     </form>
 
-                    
+
                 </div>
             </div>
 
         </div>
     </section>
 
-    
+
 
     <section class="py-6 bg-light conter">
 
         <div class="container">
             <div class="row">
                 <div class="col-2 d-none d-lg-block"></div>
-                
+
 
                 <div class="col-12 col-lg-8 justify-content-center">
                     <div class="row row-cols-2 row-cols-md-3 gx-3 g-lg-4">
@@ -310,7 +311,7 @@
                         </h3>
                     </div>
                     <div class="col"><img src="img/market.svg" alt=""></div>
-    
+
                 </div>
             </div>
 

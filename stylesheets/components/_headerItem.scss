@@ -35,9 +35,7 @@
     bottom: -118px;
 
 
-    animation: example 1s;
-    animation-iteration-count:infinite;
-    animation-direction: reverse;
+    animation: example 9s linear infinite;
     
 
 }
@@ -91,7 +89,7 @@
         position: absolute;
         bottom:10%;
         left: 10%;
-        animation: supAnimation 3s linear infinite;
+        animation: supAnimation 7s linear infinite;
         
     }
     .supcitem2 {

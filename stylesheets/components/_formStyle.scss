@@ -28,12 +28,15 @@
     }
 }
 
-.form-select {
+.form-select, .form-select:focus, .form-select:hover  {
     background-image: url('../../img/Color.svg');
     background-position: right 1rem center;
     background-size: 10px 6px;
 
 }
+
+
+  
 
 //表單驗證錯誤
 .was-validated .form-select:invalid, .form-select.is-invalid, .was-validated .form-control:invalid, .form-control.is-invalid {

@@ -5,6 +5,8 @@ const errorText = document.querySelector('.needs-validation');
 var bigImg = document.createElement("img");
 var btnSpan = document.createElement("span");
 
+
+//表單驗證
 btn.addEventListener('click', function(){
   'use strict'
 
@@ -38,9 +40,6 @@ btn.addEventListener('click', function(){
           form.classList.add('was-validated')
         }, false)
       })
-  
-  // if(document.send.account.value=='') {
-  //   alert('警示文字');
-  // }
+
 
 });

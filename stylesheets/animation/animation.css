@@ -1,14 +1,14 @@
-/* @keyframes example {
+@keyframes example {
     0% {
-        transform: translateX(10px);
+        background-position: 150 0;
     }
-    0% {
-        transform: translateX(40px);
+    50% {
+        background-position: 0 0;
     }
     100% {
-        transform: translateX(10px);
+        background-position: -150px 0;
     }
-} */
+}
 
 @keyframes supAnimation{
     0% { 
@@ -29,7 +29,6 @@
 
 @keyframes bubble{
     0% { 
-        /* transform: translateY(0px); */
         transform: rotate(45deg) translateX(0px);
         opacity: 0;
         

@@ -13627,11 +13627,8 @@ progress {
   background-repeat: repeat-x;
   background-position: center;
   bottom: -118px;
-  -webkit-animation: example 1s;
-          animation: example 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  animation-direction: reverse;
+  -webkit-animation: example 9s linear infinite;
+          animation: example 9s linear infinite;
 }
 
 .supA {
@@ -13681,8 +13678,8 @@ progress {
   position: absolute;
   bottom: 10%;
   left: 10%;
-  -webkit-animation: supAnimation 3s linear infinite;
-          animation: supAnimation 3s linear infinite;
+  -webkit-animation: supAnimation 7s linear infinite;
+          animation: supAnimation 7s linear infinite;
 }
 .supC .supcitem2 {
   position: absolute;
@@ -13901,7 +13898,7 @@ progress {
   border: 3px solid #93BBF9;
 }
 
-.form-select {
+.form-select, .form-select:focus, .form-select:hover {
   background-image: url("../../img/Color.svg");
   background-position: right 1rem center;
   background-size: 10px 6px;
