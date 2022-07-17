@@ -1,5 +1,6 @@
 .formTitle {
     position: relative;
+    background: none;
 }
 
 .formImg {
@@ -25,11 +26,12 @@
         border-color: #93BBF9;
         box-shadow: none;
         border: 3px solid #93BBF9;
+
     }
 }
 
 .form-select, .form-select:focus, .form-select:hover  {
-    background-image: url('../../img/Color.svg');
+    background-image: url('../../img/Color.svg') ;
     background-position: right 1rem center;
     background-size: 10px 6px;
 

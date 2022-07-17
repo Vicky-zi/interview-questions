@@ -1,6 +1,6 @@
 @keyframes example {
     0% {
-        background-position: 150 0;
+        background-position: 150px 0;
     }
     50% {
         background-position: 0 0;
@@ -9,6 +9,7 @@
         background-position: -150px 0;
     }
 }
+
 
 @keyframes supAnimation{
     0% { 
