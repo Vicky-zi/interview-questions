@@ -13613,10 +13613,10 @@ progress {
   letter-spacing: 0.2em;
 }
 .header-banner .header-min {
-  width: 808px;
-  height: 322px;
   border: 2px solid #B57556;
   border-radius: 20px;
+  margin: 0 20%;
+  padding: 32.5px 0 24px 0;
 }
 
 .vector {
@@ -13626,7 +13626,7 @@ progress {
   background: url("../../img/海浪.png");
   background-repeat: repeat-x;
   background-position: center;
-  bottom: -118px;
+  bottom: -120px;
   -webkit-animation: example 9s linear infinite;
           animation: example 9s linear infinite;
 }
@@ -13639,8 +13639,8 @@ progress {
   position: absolute;
   height: 64px;
   width: 80px;
-  top: -10%;
-  right: 4%;
+  top: -34%;
+  right: 2%;
 }
 .supB .supitem1 {
   position: absolute;
@@ -13664,27 +13664,28 @@ progress {
 .supB .supitem4 {
   position: absolute;
   top: 17%;
-  left: 38%;
+  left: 19%;
   -webkit-animation: supAnimation 3s linear infinite;
           animation: supAnimation 3s linear infinite;
 }
 
 .supC {
+  height: 64px;
+  width: 80px;
   position: absolute;
-  bottom: -9%;
+  bottom: -32%;
   z-index: 1;
 }
 .supC .supcitem1 {
   position: absolute;
-  bottom: 10%;
-  left: 10%;
+  left: 40%;
   -webkit-animation: supAnimation 7s linear infinite;
           animation: supAnimation 7s linear infinite;
 }
 .supC .supcitem2 {
   position: absolute;
-  bottom: 10%;
-  left: 4.5%;
+  bottom: -10%;
+  left: 3.5%;
   -webkit-animation: fireworks 3s linear infinite;
           animation: fireworks 3s linear infinite;
 }
@@ -13694,68 +13695,27 @@ progress {
 }
 
 @media (max-width: 768px) {
-  .supB {
-    top: -6%;
-    right: 0%;
+  .header-banner {
+    height: 768px;
   }
-  .supB .supitem1 {
-    top: -78%;
-    right: 7%;
+  .header-banner .header-min {
+    margin: 0 24px;
   }
-  .supB .supitem2 {
-    top: -41%;
-    right: 31%;
-  }
-  .supC {
-    bottom: -10%;
-  }
-  .supC .supcitem1 {
-    bottom: 10%;
-    left: 5.5%;
-  }
-  .supC .supcitem2 {
-    bottom: 10%;
-    left: 0.5%;
+  .vector {
+    bottom: -144px;
   }
 }
 @media (max-width: 414px) {
-  .header-banner {
-    height: 793px;
-    background: url("../../img/白色海浪.png"), url("../../img/底色.png");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    position: relative;
-  }
-  .header-banner .header-min {
-    width: 366px;
-    height: 489px;
-  }
   .vector {
-    bottom: -149px;
+    bottom: -142px;
   }
   .supB {
-    top: -6%;
-    right: 0%;
-  }
-  .supB .supitem1 {
-    top: -72%;
-    right: -2%;
-  }
-  .supB .supitem2 {
-    top: -44%;
-    right: 11%;
+    top: -22%;
+    right: -5%;
   }
   .supC {
-    bottom: -10%;
-  }
-  .supC .supcitem1 {
-    bottom: 10%;
-    left: 3%;
-  }
-  .supC .supcitem2 {
-    bottom: 10%;
-    left: -5%;
+    left: -12%;
+    bottom: -19%;
   }
 }
 .itemG, .itemB {
@@ -13821,7 +13781,7 @@ progress {
   transform: rotate(10deg);
   position: absolute;
   bottom: 0;
-  right: 39%;
+  right: 0;
 }
 .lighthouse::before {
   content: "";
@@ -13832,20 +13792,12 @@ progress {
   transform: rotate(-10deg);
   position: absolute;
   bottom: 0;
-  left: 39%;
+  left: 0;
 }
 
 @media (max-width: 768px) {
   .itemG, .itemB {
     margin-bottom: 6.5%;
-  }
-  .lighthouse::after {
-    bottom: 0;
-    right: 32%;
-  }
-  .lighthouse::before {
-    bottom: 0;
-    left: 32%;
   }
 }
 @media (max-width: 414px) {
@@ -13860,15 +13812,11 @@ progress {
     width: 100%;
     margin: 0px 0px 32px 0px;
   }
-  .lighthouse::after {
-    bottom: 0;
-    right: 19.5%;
-  }
-  .lighthouse::before {
-    bottom: 0;
-    left: 19.5%;
-  }
 }
+.container-form {
+  margin: 0 20%;
+}
+
 .formTitle {
   position: relative;
   background: none;
@@ -13905,6 +13853,14 @@ progress {
   background-size: 10px 6px;
 }
 
+.was-validated .form-select:valid:not([multiple]):not([size]), .was-validated .form-select:valid:not([multiple])[size="1"], .form-select.is-valid:not([multiple]):not([size]), .form-select.is-valid:not([multiple])[size="1"] {
+  background-image: none;
+}
+
+.was-validated .form-select:valid, .form-select.is-valid {
+  border: 1px solid #204379;
+}
+
 .was-validated .form-select:invalid, .form-select.is-invalid, .was-validated .form-control:invalid, .form-control.is-invalid {
   border: 3px solid #E06D6D;
   border-color: #E06D6D;
@@ -13923,6 +13879,9 @@ progress {
 }
 
 @media (max-width: 768px) {
+  .container-form {
+    margin: 0 24px;
+  }
   .formImg {
     left: 56%;
   }
