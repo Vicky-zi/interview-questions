@@ -1,3 +1,6 @@
+.container-form {
+    margin: 0 20%;
+}
 .formTitle {
     position: relative;
     background: none;
@@ -37,6 +40,13 @@
 
 }
 
+.was-validated .form-select:valid:not([multiple]):not([size]), .was-validated .form-select:valid:not([multiple])[size="1"], .form-select.is-valid:not([multiple]):not([size]), .form-select.is-valid:not([multiple])[size="1"] {
+    background-image: none;
+}
+
+.was-validated .form-select:valid, .form-select.is-valid {
+    border: 1px solid #204379;
+}
 
   
 
@@ -63,6 +73,10 @@
 
 
 @media(max-width:768px){
+    .container-form {
+        margin: 0 24px;
+    }
+
     .formImg {
         left: 56%;
     }
